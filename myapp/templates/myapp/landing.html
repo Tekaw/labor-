@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awlok ~ LXUSA</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="lx-landing-container">
+        <div class="lx-header">
+            <h1>Welcome to LABORXUSA</h1>
+            <p>Welcome, {{ user.username }}!</p>
+        </div>
+
+        <!-- Job Postings Section -->
+        <div class="lx-job-postings">
+            <h2>Available Job Postings</h2>
+            <div class="lx-job">
+                <h3>Software Developer</h3>
+                <p>Location: New York</p>
+                <p>Experience: 2+ years</p>
+            </div>
+            <div class="lx-job">
+                <h3>Graphic Designer</h3>
+                <p>Location: Remote</p>
+                <p>Experience: 1+ years</p>
+            </div>
+            <!-- More job postings can be added here -->
+        </div>
+        <div class="lx-service-request">
+            <h2>Request a Service</h2>
+            <form method="post" action="{% url 'service_request' %}">
+                {% csrf_token %}
+                <input type="text" name="service_type" placeholder="Service Type" required>
+                <textarea name="description" placeholder="Service Description" required></textarea>
+                <input type="email" name="contact_email" placeholder="Your Email" required>
+                <button type="submit" class="lx-submit-button">Submit Request</button>
+            </form>
+        </div>
+
+        <div class="lx-content">
+            <a href="{% url 'logout' %}" class="lx-logout-button">Logout</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-toggle button {
+    padding: 10px;
+    border: none;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.form-toggle button:focus,
+.form-toggle button:hover {
+    background-color: #ddd;
+}
+
+.form-section {
+    display: none; /* Hide by default */
+}
+
+
+//Styling for landing
+
+
+.lx-landing-container {
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.lx-header h1 {
+    color: #2a2a2a;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.lx-header p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.lx-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lx-logout-button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.lx-logout-button:hover {
+    background-color: #0056b3;
+}
+
+
+.lx-job-postings {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.lx-job-postings h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.lx-job {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.lx-job:last-child {
+    border-bottom: none;
+}
+
+.lx-job h3 {
+    color: #007bff;
+    margin: 0 0 0.5rem 0;
+}
+
+.lx-job p {
+    color: #666;
+    margin: 0;
+}
+
+
+// Service request styles
+
+.lx-service-request {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.lx-service-request h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.lx-service-request form {
+    display: flex;
+    flex-direction: column;
+}
+
+.lx-service-request input[type="text"],
+.lx-service-request input[type="email"],
+.lx-service-request textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.lx-service-request .lx-submit-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.lx-service-request .lx-submit-button:hover {
+    background-color: #218838;
+}

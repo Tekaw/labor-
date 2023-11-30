@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home -Awlok</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Awlok</h1>
+
+        <!-- Toggle Buttons -->
+        <div class="form-toggle">
+            <button id="toggle-login">Login</button>
+            <button id="toggle-register">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-section" id="login-form">
+            <form method="post" action="{% url 'home' %}">
+                {% csrf_token %}
+                {% if login_form.non_field_errors %}
+                    <div class="error">{{ login_form.non_field_errors }}</div>
+                {% endif %}
+                {% for field in login_form %}
+                    {{ field }}
+                    {% if field.errors %}
+                        <div class="error">{{ field.errors }}</div>
+                    {% endif %}
+                {% endfor %}
+                <button type="submit" name="submit_login">Login</button>
+            </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form-section" id="register-form" style="display:none;">
+            <form method="post" action="{% url 'home' %}">
+                {% csrf_token %}
+                {% for field in registration_form %}
+                    {{ field }}
+                    {% if field.errors %}
+                        <div class="error">{{ field.errors }}</div>
+                    {% endif %}
+                {% endfor %}
+                <button type="submit" name="submit_register">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('toggle-login').addEventListener('click', function() {
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('register-form').style.display = 'none';
+        });
+
+        document.getElementById('toggle-register').addEventListener('click', function() {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('register-form').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
