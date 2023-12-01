@@ -1,5 +1,5 @@
 libxml2
-libxslt
+libxslt1.1
 libxml2-dev
-libxslt-dev
+libxslt1-dev
 
