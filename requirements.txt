@@ -57,7 +57,7 @@ virtualenv-clone==0.5.7
 Werkzeug==2.1.2
 whitenoise==6.2.0
 zipp==3.8.0
-setuptools==68.0.1
+setuptools
 lxml==4.6.3
 libxml2
 libxslt
