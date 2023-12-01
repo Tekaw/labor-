@@ -58,8 +58,5 @@ Werkzeug==2.1.2
 whitenoise==6.2.0
 zipp==3.8.0
 setuptools
-lxml==4.6.3
-libxml2
-libxslt
-libxml2-dev
-libxslt-dev
+lxml==4.8.3
+
