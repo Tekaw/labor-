@@ -1,0 +1,82 @@
+/* Resetting default margin and padding */
+body, h1, ul, header, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9; /* Light gray background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Styling header */
+header {
+    background: linear-gradient(45deg, #ff0000, #ff6b6b); /* Gradient background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-menu {
+    list-style-type: none;
+}
+
+.navbar-item {
+    margin-right: 0; /* Remove the margin */
+}
+
+/* Styling main content */
+.container {
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.page-title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contract-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contract-item {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.contract-item:hover {
+    transform: translateY(-5px); /* Lift on hover */
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff0000, #dc143c); /* Gradient background */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #dc143c, #ff0000); /* Gradient background on hover */
+}

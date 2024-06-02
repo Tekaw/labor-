@@ -1,0 +1,109 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.header .navigation ul {
+    list-style: none;
+}
+
+.header .navigation ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header .navigation ul li:last-child {
+    margin-right: 0;
+}
+
+.header .navigation ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.header .navigation ul li a:hover {
+    color: #333;
+}
+
+.header .navigation ul li .button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Featured tasks section styles */
+.featured-tasks {
+    padding: 80px 0;
+}
+
+.featured-tasks h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.task-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task {
+    flex-basis: calc(33.33% - 20px);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.task p {
+    font-size: 16px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/contracts.css">
+    <title>Contracts</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a href="/" class="button">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            {% if user.is_authenticated %}
+                <h1 class="page-title">Contracts</h1>
+                <ul class="contract-list">
+                    {% for contract in contracts %}
+                        <li class="contract-item">
+                            {{ contract.contract_name }}
+                            <form action="{% url 'delete_contract' contract.id %}" method="post">
+                                {% csrf_token %}
+                                <button type="submit">Delete</button>
+                            </form>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <a href="{% url 'add_contract' %}" class="button">Add New Contract</a>
+            {% else %}
+                <p>Please <a href="{% url 'signin' %}">sign in</a> to view contracts.</p>
+            {% endif %}
+        </main>
+    </div>
+</body>
+</html>

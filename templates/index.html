@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LX - Get Things Done</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">LX</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="/howitworks/">How It Works</a></li>
+                    <li><a href="/contracts/">Browse Contracts</a></li>
+                    <!-- <li><a href="#">Become a Vendor</a></li> -->
+                    <li><a href="/signin/">Sign In</a></li>
+                    <!-- Example of a signout link -->
+                    <li><a href="{% url 'signout' %}">Sign out</a></li>
+
+                    <li><a href="/signup/" class="button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Get Things Done with LABORXUSA</h2>
+            <!-- <p>Hire trusted Vendor to take care of your Property - home services, moving, furniture assembly, yard work, and more!</p> -->
+            <!-- <a href="#" class="button">Get Started</a> -->
+        </div>
+    </section>
+
+    <section class="featured-tasks">
+        <div class="container">
+            <h2>Solutions</h2>
+            <div class="task-list">
+                <div class="task">
+                    <h3>Building Maintenance</h3>
+                    <p>keeping the systems up</p>
+                </div>
+                <div class="task">
+                    <h3>Project Management</h3>
+                    <p>Managing capital projects from Start to Finish  </p>
+                </div>
+                <div class="task">
+                    <h3>Consultants</h3>
+                    <p>Dont know what you need or what needs to be done? Let us help you</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 LX. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
