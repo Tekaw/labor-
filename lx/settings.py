@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-ninx--jx(y-1eo@qhd!@nmn&iq!83bdekaaj)-0elwym$!8&8$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '10.116.0.2']
+ALLOWED_HOSTS = ['*', '10.116.0.2', ';laborxusa.com', 'www.laborxusa.com']
 
 
 # Application definition
